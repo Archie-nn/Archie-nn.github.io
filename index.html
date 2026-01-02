@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>個人履歷</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .resume {
+      background: #ffffff;
+      width: 100%;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      overflow: hidden;
+    }
+
+    /* 左側欄 */
+    .sidebar {
+      background-color: #fafafa;
+      padding: 30px 20px;
+      border-right: 1px solid #e5e5e5;
+      text-align: center;
+    }
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background-color: #ddd;
+      background-image: url('photo.png'); /* 放你的照片 */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .title {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* 右側內容 */
+    .content {
+      padding: 30px 40px;
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    section h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      border-left: 4px solid #4f46e5;
+      padding-left: 10px;
+    }
+
+    section p, section li {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    /* RWD */
+    @media (max-width: 768px) {
+      .resume {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <!-- 左側：照片與基本資料 -->
+    <aside class="sidebar">
+      <div class="photo"></div>
+      <div class="name">楊恩奇</div>
+      <div class="title">職稱 / 學士</div>
+      <div class="contact">
+        Email：yangenqi805@gmail.com<br />
+        電話：0958-095-801<br />
+        地區：台灣 桃園
+      </div>
+    </aside>
+
+    <!-- 右側：履歷內容 -->
+    <main class="content">
+      <section>
+        <h2>個人簡介</h2>
+        <p>
+          我是楊恩奇目前就讀於桃園市的元智大學資訊工程學系，除了程式之外也有在培養其他興趣如繪畫和打球
+          喜歡嘗試新鮮的事物，也能對所學習的東西付出專注，雖然目前修課成績未必顆顆理想，但還是有在有興趣的領域做到頂尖
+          希望未來能在資訊領域有所發展，無論是之後的專題製作或是畢業後的工作都希望能夠持續精進自己，也能在畢業前多豐富自己的視野
+        </p>
+      </section>
+
+      <section>
+        <h2>學歷</h2>
+        <ul>
+          <li>元智大學 資訊工程學系（2024-2026）</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>技能</h2>
+        <ul>
+          <li>C++ / Python</li>
+          <li>HTML / CSS / JavaScript</li>
+          <li>資料結構 / 離散數學</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>專案或經驗</h2>
+        <ul>
+          <li>個人履歷網站設計</li>
+          <li>C++ linked list 類別實作</li>
+          <li>元智校園美食地圖</li>
+          <li>C/C++ hash function 實作</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
